@@ -1,0 +1,17 @@
+First of F is {a,(,}
+First of Y is {*,@,}
+First of T is {a,(,}
+First of B is {+,@,}
+First of E is {a,(,}
+Follow of F is {$,),*,+,}
+Follow of Y is {$,),+,}
+Follow of T is {$,),+,}
+Follow of B is {$,),}
+Follow of E is {$,),}
+		LL(1) parser of given grammar is 
+            $           )           (           a           *           +           
+F           --          --          F->(E)      F->a        --          --          
+Y           Y->@        Y->@        --          --          Y->*FY      Y->@        
+T           --          --          T->FY       T->FY       --          --          
+B           B->@        B->@        --          --          --          B->+TB      
+E           --          --          E->TB       E->TB       --          --          

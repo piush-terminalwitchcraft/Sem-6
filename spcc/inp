@@ -1,0 +1,13 @@
++ * a ( )
+E B T Y F
+E
+8
+E->TB
+B->+TB
+B->@
+T->FY
+Y->*FY
+Y->@
+F->a
+F->(E)
+
