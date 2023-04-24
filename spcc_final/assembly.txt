@@ -1,0 +1,14 @@
+MACRO 
+EVAL &X &Y &Z 
+LOAD &X
+SUB &Y 
+ADD &Z
+MEND
+MACRO 
+EXPR &A &B &C &D &E &F 
+EVAL &A &B &C 
+STORE &A 
+EVAL &D &E &F
+ADD &A 
+MEND 
+

@@ -32,7 +32,7 @@ std::string subString(std::string realStr, int l, int r) {
 }
 
 void parse(string str){
-    int left = 0, right = 0, len = str.size();
+    int left = 0, right = 0, len = str.size() - 1;
 
     while(right <= len and left <= right){
         if( isPunctuation(str[right]) == false){
@@ -84,7 +84,7 @@ int32_t main(){
         {"extern", 1}, {"bool", 1}
     };
     
-    string code = "int main(){int n = 0, p = 0; int m = n + 3*p;return 0;}";
+    string code = "int main(){int n = 0, p = 0; int m = n + 3*p;return 0;} ";
  
     parse(code);
     return 0;
